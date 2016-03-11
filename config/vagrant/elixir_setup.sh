@@ -11,7 +11,7 @@ if [ -z `which elixir` ]; then
   apt-get -y update
   apt-get -y install elixir
   yes Y | mix local.hex
-  yes Y | mix archive.install "https://github.com/phoenixframework/phoenix/releases/download/v0.17.0/phoenix_new-$PHOENIX_VERSION.ez"
+  yes Y | mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 fi
 
 echo "=== End Vagrant Provisioning using 'config/vagrant/elixir_setup.sh'"
